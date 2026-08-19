@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Human Override — Humanity Stays in Control</title>
+<meta name="description" content="Human Override is a human-first advocacy movement for accountable AI, responsible automation and meaningful human agency.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<svg class="svg-sprite" aria-hidden="true">
+  <symbol id="i-briefcase" viewBox="0 0 48 48">
+    <rect x="5" y="14" width="38" height="25" rx="2"/><path d="M17 14V9h14v5M5 24h38M20 24v4h8v-4"/>
+  </symbol>
+  <symbol id="i-scales" viewBox="0 0 48 48">
+    <path d="M24 7v34M13 11h22M8 16l-6 12h12L8 16Zm32 0-6 12h12L40 16ZM15 41h18"/>
+  </symbol>
+  <symbol id="i-people" viewBox="0 0 48 48">
+    <circle cx="24" cy="15" r="7"/><circle cx="10" cy="19" r="5"/><circle cx="38" cy="19" r="5"/>
+    <path d="M13 39c0-8 4-13 11-13s11 5 11 13M2 39c0-6 3-10 8-10 3 0 5 1 7 3M46 39c0-6-3-10-8-10-3 0-5 1-7 3"/>
+  </symbol>
+  <symbol id="i-shield" viewBox="0 0 48 48">
+    <path d="M24 4 40 10v12c0 11-6 18-16 22C14 40 8 33 8 22V10L24 4Z"/><path d="m17 24 5 5 10-11"/>
+  </symbol>
+  <symbol id="i-person" viewBox="0 0 48 48">
+    <circle cx="24" cy="14" r="7"/><path d="M11 42c1-11 5-17 13-17s12 6 13 17M17 8c3-5 11-6 15 0"/>
+  </symbol>
+  <symbol id="i-lock" viewBox="0 0 48 48">
+    <rect x="10" y="20" width="28" height="22" rx="2"/><path d="M16 20v-7c0-6 3-10 8-10s8 4 8 10v7M24 29v6"/>
+  </symbol>
+  <symbol id="i-head" viewBox="0 0 48 48">
+    <path d="M31 41v-7c6-4 9-9 9-16 0-9-7-15-16-15S8 10 8 19c0 7 4 11 8 14v8"/>
+    <path d="M17 15c2-3 5-5 8-5 5 0 9 4 9 9 0 3-1 5-3 7M21 22h7M24 18v8"/>
+  </symbol>
+  <symbol id="i-bulb" viewBox="0 0 48 48">
+    <path d="M24 5c-9 0-15 6-15 14 0 6 3 10 8 14v5h14v-5c5-4 8-8 8-14 0-8-6-14-15-14Z"/>
+    <path d="M17 42h14M24 0v3M5 8l3 3M43 8l-3 3M1 23h5M42 23h5"/>
+  </symbol>
+  <symbol id="i-check" viewBox="0 0 48 48">
+    <path d="M6 24 18 36 42 10"/><path d="M42 25v16H7V6h25"/>
+  </symbol>
+  <symbol id="i-eye" viewBox="0 0 48 48">
+    <path d="M3 24s7-12 21-12 21 12 21 12-7 12-21 12S3 24 3 24Z"/><circle cx="24" cy="24" r="6"/>
+  </symbol>
+  <symbol id="i-robot" viewBox="0 0 48 48">
+    <rect x="8" y="15" width="32" height="25" rx="3"/><path d="M24 15V9M19 9h10M3 24h5M40 24h5M15 40v5M33 40v5"/>
+    <circle cx="18" cy="26" r="2"/><circle cx="30" cy="26" r="2"/><path d="M17 33h14"/>
+  </symbol>
+</svg>
+
+<div id="progress"></div>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <strong>HUMAN <span>OVERRIDE</span></strong>
+      <small>Humanity stays in control.</small>
+    </a>
+    <button id="menuBtn" class="menu-btn" aria-expanded="false">MENU</button>
+    <nav id="navLinks" class="nav-links">
+      <a href="#why">WHY THIS MATTERS</a>
+      <a href="#principles">PRINCIPLES</a>
+      <a href="#issues">ISSUES</a>
+      <a href="#mission">MISSION</a>
+      <a href="#join">JOIN</a>
+      <a href="#donate">DONATE</a>
+    </nav>
+    <a class="header-cta" href="#join">♙ &nbsp; JOIN THE MOVEMENT</a>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero section-frame">
+  <div class="hero-bg"></div>
+  <div class="network-overlay"></div>
+  <div class="red-trace trace-hero"><i></i><i></i><i></i></div>
+
+  <div class="wrap hero-layout">
+    <div class="hero-copy reveal">
+      <h1>TECHNOLOGY<br>SHOULD SERVE<br><span>HUMANITY.</span><br>NOT REPLACE IT.</h1>
+      <p>AI and automation can be powerful tools. But power without boundaries can quietly rewrite work, freedom, accountability, privacy, creativity and human purpose. We believe people—not systems—must remain in control.</p>
+      <a class="btn" href="#join">STAND WITH US <b>→</b></a>
+    </div>
+
+    <div class="override-hud reveal">
+      <div class="hud-center">
+        <div class="fingerprint">
+<svg class="fingerprint-svg" viewBox="0 0 120 120" aria-hidden="true">
+  <g fill="none" stroke="currentColor" stroke-width="5.5" stroke-linecap="round">
+    <path d="M60 17c-22 0-40 18-40 40"/>
+    <path d="M60 28c-16 0-29 13-29 29 0 21-6 31-12 38"/>
+    <path d="M60 39c-10 0-18 8-18 18 0 25-7 37-15 45"/>
+    <path d="M60 50c-4 0-7 3-7 7 0 27-7 39-13 46"/>
+    <path d="M60 17c22 0 40 18 40 40 0 17-3 29-7 40"/>
+    <path d="M60 28c16 0 29 13 29 29 0 19-3 31-7 41"/>
+    <path d="M60 39c10 0 18 8 18 18 0 22-3 33-6 42"/>
+    <path d="M60 50c4 0 7 3 7 7 0 23-2 34-5 42"/>
+    <path d="M49 73c-1 13-4 22-9 29"/>
+    <path d="M71 73c0 12-1 21-4 29"/>
+  </g>
+</svg>
+</div>
+      </div>
+      <svg viewBox="0 0 400 400" class="hud-text" aria-hidden="true">
+        <defs>
+          <path id="topArc" d="M 70,200 A 130,130 0 0,1 330,200"/>
+          <path id="bottomArc" d="M 330,200 A 130,130 0 0,1 70,200"/>
+        </defs>
+        <text><textPath href="#topArc" startOffset="50%" text-anchor="middle">HUMAN OVERRIDE</textPath></text>
+        <text><textPath href="#bottomArc" startOffset="50%" text-anchor="middle">CONTROL RETAINED</textPath></text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section id="why" class="why section-frame">
+  <div class="wrap why-layout">
+    <div class="why-art reveal">
+      <div class="why-image"></div>
+      <div class="red-trace trace-why"><i></i><i></i><i></i></div>
+    </div>
+    <div class="why-content reveal">
+      <span class="eyebrow">WHY THIS MATTERS</span>
+      <h2>Efficiency cannot be the only<br>measure of a future worth building.</h2>
+      <div class="why-points">
+        <article><svg class="line-icon ico"><use href="#i-briefcase"/></svg><h3>OUR WORK</h3><p>Automation threatens more than jobs. It threatens dignity and meaningful work.</p></article>
+        <article><svg class="line-icon ico"><use href="#i-scales"/></svg><h3>OUR JUDGMENT</h3><p>When decisions are outsourced, we lose critical thinking and moral responsibility.</p></article>
+        <article><svg class="line-icon ico"><use href="#i-people"/></svg><h3>OUR RELATIONSHIPS</h3><p>Technology that replaces human connection weakens the fabric of society.</p></article>
+        <article><svg class="line-icon ico"><use href="#i-shield"/></svg><h3>OUR RESPONSIBILITY</h3><p>Without accountability by design, harm is inevitable and hard to reverse.</p></article>
+        <article><svg class="line-icon ico"><use href="#i-person"/></svg><h3>OUR PURPOSE</h3><p>We risk a future of convenience without meaning if we stop choosing for ourselves.</p></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="mission" class="mission section-frame">
+  <div class="mission-bg"></div>
+  <div class="mission-net"></div>
+  <div class="wrap mission-layout">
+    <div class="mission-symbol reveal">
+      <div class="shield"><span>♙</span></div>
+    </div>
+    <div class="mission-copy reveal">
+      <span class="eyebrow">OUR MISSION</span>
+      <h2>Build the guardrails before<br>we need the emergency brake.</h2>
+      <p>Human Override is an advocacy movement for practical rules that preserve human authority in an increasingly automated world. We want technologists, workers, parents, policymakers, creators, business owners and everyday people at the same table.</p>
+      <p>We are not asking society to abandon innovation. We are asking society to decide—deliberately—where automation belongs, where it does not, and what protections must exist before deployment.</p>
+      <a href="#principles" class="btn btn-outline">READ OUR PRINCIPLES <b>→</b></a>
+    </div>
+  </div>
+</section>
+
+<section id="principles" class="principles section-frame">
+  <div class="wrap">
+    <span class="eyebrow">OUR PRINCIPLES</span>
+    <h2>Lines worth drawing.</h2>
+    <div class="principles-grid">
+      <article><div class="num">01</div><svg class="line-icon picon"><use href="#i-person"/></svg><h3>HUMAN AUTHORITY</h3><p>High-impact decisions need meaningful human review and a real path to appeal.</p></article>
+      <article><div class="num">02</div><svg class="line-icon picon"><use href="#i-shield"/></svg><h3>ACCOUNTABILITY FIRST</h3><p>Organizations must remain responsible for automated outcomes.</p></article>
+      <article><div class="num">03</div><svg class="line-icon picon"><use href="#i-lock"/></svg><h3>PRIVACY BY DESIGN</h3><p>People should know when AI creates, ranks, rejects, monitors or communicates.</p></article>
+      <article><div class="num">04</div><svg class="line-icon picon"><use href="#i-head"/></svg><h3>HUMAN DIGNITY</h3><p>No one should be trapped where no responsible human can intervene.</p></article>
+      <article><div class="num">05</div><svg class="line-icon picon"><use href="#i-bulb"/></svg><h3>PURPOSE OVER PROFIT</h3><p>Work provides mastery, community, independence and purpose—not just output.</p></article>
+      <article><div class="num">06</div><svg class="line-icon picon"><use href="#i-check"/></svg><h3>FREEDOM OF CHOICE</h3><p>Technology should leave people more capable and independent.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="issues" class="issues section-frame">
+  <div class="wrap">
+    <div class="issues-head">
+      <div><span class="eyebrow">ISSUES WE OPPOSE</span><h2>WHERE WE DRAW THE LINE.</h2></div>
+      <a href="#join" class="btn btn-outline">SEE ALL ISSUES WE'RE FIGHTING <b>→</b></a>
+    </div>
+    <div class="issue-grid">
+      <article class="issue-card surveillance reveal">
+        <div class="issue-art"></div><div class="issue-copy"><svg class="line-icon issue-icon"><use href="#i-eye"/></svg><h3>SURVEILLANCE CREEP</h3><p>Mass monitoring without consent threatens a free society.</p><a href="#join">Learn more →</a></div>
+      </article>
+      <article class="issue-card jobs reveal">
+        <div class="issue-art"></div><div class="issue-copy"><svg class="line-icon issue-icon"><use href="#i-robot"/></svg><h3>JOB REPLACEMENT<br>WITHOUT PLAN</h3><p>Automation should augment people—not discard them.</p><a href="#join">Learn more →</a></div>
+      </article>
+      <article class="issue-card blackbox reveal">
+        <div class="issue-art"></div><div class="issue-copy"><svg class="line-icon issue-icon"><use href="#i-head"/></svg><h3>BLACK BOX DECISIONS</h3><p>When algorithms decide our lives, we lose our say.</p><a href="#join">Learn more →</a></div>
+      </article>
+      <article class="issue-card data reveal">
+        <div class="issue-art"></div><div class="issue-copy"><svg class="line-icon issue-icon"><use href="#i-lock"/></svg><h3>DATA EXPLOITATION</h3><p>Your data is not a product. It's your life.</p><a href="#join">Learn more →</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="action-strip section-frame">
+  <div class="wrap action-grid">
+    <div id="join" class="join-block reveal">
+      <div class="action-icon">◎</div>
+      <div class="action-copy"><h3>JOIN THE MOVEMENT</h3><p>Get updates. Take action.<br>Help shape a future we can all live in.</p></div>
+      <form id="signupForm"><div class="formrow"><input name="email" type="email" required placeholder="Your email address"><button>JOIN US</button></div><label><input type="checkbox" required> We respect your privacy. Unsubscribe anytime.</label><span id="formStatus"></span></form>
+    </div>
+    <div id="donate" class="donate-block reveal">
+      <div class="action-icon">♡</div>
+      <div class="action-copy"><h3>SUPPORT HUMAN OVERRIDE</h3><p>Your donation powers research, advocacy and the fight to keep humanity in control.</p></div>
+      <div class="donate-actions">
+        <div class="amounts"><button>$10</button><button>$25</button><button>$50</button><button>$100</button><button>Other</button></div>
+        <a id="donationButton" href="#" class="donate-btn">♥ &nbsp; DONATE NOW</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-layout">
+    <div class="brand"><strong>HUMAN <span>OVERRIDE</span></strong><small>© <span id="year"></span> Human Override. All rights reserved.</small></div>
+    <p>NOT ANTI-TECHNOLOGY. PRO-HUMAN. PRO-ACCOUNTABILITY. PRO-CHOICE.</p>
+    <div class="socials"><span>𝕏</span><span>▶</span><span>◉</span><span>✉</span></div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

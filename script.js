@@ -1,0 +1,11 @@
+const CONFIG={donationUrl:""};
+document.getElementById("year").textContent=new Date().getFullYear();
+const menu=document.getElementById("menuBtn"),nav=document.getElementById("navLinks");
+menu.addEventListener("click",()=>{const o=nav.classList.toggle("open");menu.setAttribute("aria-expanded",String(o))});
+nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>nav.classList.remove("open")));
+const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("show");obs.unobserve(e.target)}}),{threshold:.08});
+document.querySelectorAll(".reveal").forEach(el=>obs.observe(el));
+addEventListener("scroll",()=>{const d=document.documentElement,m=d.scrollHeight-d.clientHeight;document.getElementById("progress").style.width=(m?d.scrollTop/m*100:0)+"%"},{passive:true});
+document.getElementById("signupForm").addEventListener("submit",async e=>{e.preventDefault();const f=e.currentTarget,s=document.getElementById("formStatus");s.textContent="Adding your email…";try{const r=await fetch("/api/subscribe",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({email:f.email.value.trim()})});const j=await r.json();if(!r.ok)throw Error(j.error||"Unable to subscribe");s.textContent=j.message||"You're on the list.";f.reset()}catch(err){s.textContent="Mailing list will activate after Cloudflare D1 is connected."}});
+const donate=document.getElementById("donationButton");if(CONFIG.donationUrl){donate.href=CONFIG.donationUrl;donate.target="_blank"}else donate.addEventListener("click",e=>e.preventDefault());
+document.querySelectorAll(".amounts button").forEach(b=>b.addEventListener("click",()=>document.querySelectorAll(".amounts button").forEach(x=>x.style.background=x===b?"#ef2b1d":"#090b0e")));
