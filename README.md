@@ -24,5 +24,3 @@ Upload the CONTENTS of this package to the existing repository, replacing the ol
 
 ## Donations
 Set `donationUrl` at the top of `script.js` once a payment link exists.
-
-Deployment refresh
